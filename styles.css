@@ -1,0 +1,128 @@
+/* importa a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body { /* estiliza o corpo da página */
+    background-image: url('C:/Users/nicol/OneDrive/Área de Trabalho/TRABALHO/imagens/pngtree-asymmetry-simple-white-abstract-cv-image_591339.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    font-family: "Chakra Petch", sans-serif; 
+    background-repeat: no-repeat; 
+    background-color: #DDDDDD; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul { /* Seletor que se aplica a uma lista não ordenada dentro de um elemento de navegação */
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 15px;
+        animation: fadeIn 0.5s ease-in-out;
+  }
+
+.tabcontent {  /* usado junto com o js para adicionar efeitos*/
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+h1 { /* títulos */
+    font-size: 2.5rem; 
+    color: #222831; 
+    text-align: center; 
+    letter-spacing: 0.4rem; 
+}
+
+section { /* Estiliza as seções da página */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 3rem; 
+}
+
+section input { /* Estiliza os inputs dentro das seções */
+    width: 30rem; 
+    border: none; 
+    padding: 1rem; 
+    border-radius: 1.5rem; 
+    margin-bottom: 1rem; 
+    color: #45474B; 
+    font-size: 1rem; 
+    box-sizing: border-box; 
+}
+
+section button { /* Estiliza os botões dentro das seções */
+    padding: 0.8rem 1.2rem; 
+    border: none; 
+    border-radius: 1.5rem; 
+    background-color: #30475E; 
+    color: #F5F7F8; 
+    font-size: 1rem; 
+    cursor: pointer; 
+}
+
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #dce6e7; 
+    color: #000000; 
+    text-align: center; 
+    padding: 0; 
+    width: 100%; 
+    position: absolute; 
+    bottom: 0; 
+    font-size: 1rem; 
+}
+
+@media (max-width: 768px) { /* telas menores */
+    h1 {
+        font-size: 2rem; 
+        letter-spacing: 0.2rem; 
+    }
+
+    section input {
+        width: 25rem; 
+        padding: 0.8rem; 
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; 
+    }
+}
+
+/* celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; 
+        letter-spacing: 0.1rem; 
+    }
+
+    section input {
+        width: 17rem; 
+    }
+
+    section button {
+        padding: 0.6rem 1rem; 
+        font-size: 0.9rem; 
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; 
+    }
+
+    footer {
+        font-size: 0.9rem; /
+    }
+}

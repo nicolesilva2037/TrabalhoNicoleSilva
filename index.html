@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <body>
+        <header>
+            <h1>Portfólio Pessoal</h1>
+        </header>
+        <nav>
+            <ul>
+                <button class="tablink" onclick="openTab(event, 'sobre')">Sobre Mim</button>
+                <button class="tablink" onclick="openTab(event, 'formacao')">Formação</button>
+                <button class="tablink" onclick="openTab(event, 'portfolio')">Portfólio</button>
+                <button class="tablink" onclick="openTab(event, 'contato')">Contato</button>
+            </ul>
+       
+        </nav>
+        
+        <div id="sobre" class="tabcontent">
+            <h2>Sobre Mim</h2>
+            <p>Meu nome é Nicole, tenho 24 anos.</p>
+            <p></p>
+            <div id="sobre-texto" class="fade-in">
+                <p>Atualmente meus hobbies favoritos são jogar jogos online e desenvolver mods visuais para esses jogos em ferramentas de modelagens, como Blender, 3dsmax e Sketchup.</p>
+            </div>
+        </div>
+    
+        <div id="formacao" class="tabcontent">
+            <h2>Formação:</h2>
+            <p>Atualmente estou cursando Análise e Desenvolvimento de Sistemas na UNINTER e estou no 1° período.</p>
+            <h2>Cursos:</h2>
+            <p>Inglês - Fluente</p>
+            <p>Programação .lua</p>
+        </div>
+        <div id="portfolio" class="tabcontent">
+            <h2>Portfólio</h2>
+            <p>Verifique meu último trabalho no Figma: <a href="https://www.figma.com/design/szIAUSk5WfRoUnpetIt0l9/Trabalho-(1)?node-id=0-1&t=tqw8QUs5MKKsSyP5-1" target="_blank">Clique aqui</a></p>
+        </div>
+        <div id="contato" class="tabcontent">
+            <h2>Contato Profissional</h2>
+            <p>Email: nicole.silvagg@outlook.com</p>
+            <p>Linkedin: <a href="https://www.linkedin.com/in/nicole-silva-1256b4304/" target="_blank">Clique aqui</a></p>
+        </div>
+   
+
+        <footer>
+            <p>
+              Site desenvolvido por Nicole Goldar Gois Silva, uso exclusivo para apresentação de trabalho
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+    </html>
